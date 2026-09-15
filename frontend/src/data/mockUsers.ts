@@ -1,0 +1,52 @@
+import { User } from '../types/user';
+
+export const mockCurrentUser: User = {
+  id: 'user_1',
+  name: 'Aditya Verma',
+  username: 'aditya_coder',
+  email: 'aditya@example.com',
+  role: 'admin',
+  rating: 1850,
+  maxRating: 1920,
+  rank: 'Knight',
+  solvedCount: {
+    easy: 42,
+    medium: 28,
+    hard: 6,
+    total: 76,
+  },
+  streak: 14,
+  maxStreak: 18,
+  lastActiveDate: new Date().toISOString().split('T')[0],
+  streakFreezes: 2,
+  streakStatus: 'active',
+  activityHistory: [
+    { date: '2026-09-08', status: 'completed', count: 3 },
+    { date: '2026-09-07', status: 'completed', count: 2 },
+    { date: '2026-09-06', status: 'completed', count: 4 },
+    { date: '2026-09-05', status: 'frozen', count: 0 },
+    { date: '2026-09-04', status: 'completed', count: 1 },
+    { date: '2026-09-03', status: 'completed', count: 5 },
+    { date: '2026-09-02', status: 'completed', count: 2 },
+    { date: '2026-09-01', status: 'recovered', count: 1 },
+  ],
+  joinedDate: 'January 2024',
+  contestHistory: [
+    {
+      contestId: 'contest-ended-1',
+      contestTitle: 'Global Speed Coding Championship 2026',
+      rank: 42,
+      ratingChange: +45,
+      newRating: 1850,
+      date: '2026-08-25',
+    },
+    {
+      contestId: 'contest-old-1',
+      contestTitle: 'Weekly Contest 400',
+      rank: 88,
+      ratingChange: +22,
+      newRating: 1805,
+      date: '2026-08-18',
+    },
+  ],
+};
